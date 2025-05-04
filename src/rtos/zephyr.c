@@ -762,6 +762,14 @@ static struct zephyr_params zephyr_params_list[] = {
 		.callee_saved_stacking = &riscv_callee_saved_stacking,
 		.get_cpu_state = &zephyr_get_riscv_state,
 	},
+       {
+               .target_name = "riscv",
+               .pointer_width = 4,
+               .callee_saved_stacking = &riscv_callee_saved_stacking,
+               .get_cpu_state = &zephyr_get_riscv_state,
+       },
+       
+	
 	{
 		.target_name = NULL
 	}
